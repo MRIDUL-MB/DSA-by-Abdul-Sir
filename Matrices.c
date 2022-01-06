@@ -48,7 +48,7 @@ int main()
 //	printf("Enter the dimension: ");
 //	scanf("%d", &size);
 	M.dim = 4;
-//	M.A = (int *)malloc(M.dim*sizeof(int));
+	M.A = (int *)malloc(M.dim*sizeof(int));
 	
 	setDiagonal(&M,1,1,5);setDiagonal(&M,2,2,6);setDiagonal(&M,3,3,7);setDiagonal(&M,4,4,8);
 	getDiagonal(M,4,4);
