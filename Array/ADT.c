@@ -405,22 +405,22 @@ void POE(Array arr, int h, int k)
 
 int main()
 {
-	Array arr;
-	int n,i;
-	printf("Size of an array: ");
-	scanf("%d", &arr.size);
-	arr.A = (int*)malloc(arr.size*sizeof(int));
-	arr.length = 0;
-	printf("Enter the length of the array: ");
-	scanf("%d", &n);
-	
-	arr.length = n;
-	printf("Enter all elements\n");
-	for(i=0;i<n;i++)
-	{
-		scanf("%d",&arr.A[i]);
-	}
-	printf("\n");
+//	Array arr;
+//	int n,i;
+//	printf("Size of an array: ");
+//	scanf("%d", &arr.size);
+//	arr.A = (int*)malloc(arr.size*sizeof(int));
+//	arr.length = 0;
+//	printf("Enter the length of the array: ");
+//	scanf("%d", &n);
+//	
+//	arr.length = n;
+//	printf("Enter all elements\n");
+//	for(i=0;i<n;i++)
+//	{
+//		scanf("%d",&arr.A[i]);
+//	}
+//	printf("\n");
 
 //	Add(&arr,40);
 //	Insert(&arr,7,20);
@@ -437,11 +437,12 @@ int main()
 //	Replace(&arr);
 	
 //	Merging, Union, Intersection and Difference
-//	int A[] = {2,6,10,15,25} ,B[]={3,6,7,15,20};
-//	int *p = A, *q = B;
-//	Array arr1 = {p,5,5};
-//	Array arr2 = {q,5,5};
+	int A[] = {2,3,10,15,25} ,B[]={4,6,7,15,20};
+	int *p = A, *q = B;
+	Array arr1 = {p,5,5};
+	Array arr2 = {q,5,5};
 //	Array arr3 = Intersection(arr1, arr2);  
+	Array arr = Merging(arr1, arr2);
 	
 //	MissingElements(arr);
 //	MissingElementsH(arr,20,1);
